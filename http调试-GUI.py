@@ -345,7 +345,7 @@ class Frame(wx.Frame):
         if pd == "GET":
                     fhz=网页_访问(url,0,data,cookie,xyt)
                     结果=fhz.源码
-                    print(fhz.协议头)
+                    print(结果)
                     self.编辑框返回协议头.Clear()
                     self.编辑框返回值.Clear()
                     self.编辑框返回协议头.write(str(fhz.协议头))
@@ -353,7 +353,7 @@ class Frame(wx.Frame):
         else:
                     fhz=网页_访问(url,1,data,cookie,xyt)
                     结果=fhz.源码
-                    print(fhz.协议头)
+                    print(结果)
                     self.编辑框返回协议头.Clear()
                     self.编辑框返回值.Clear()
                     self.编辑框返回协议头.write(str(fhz.协议头))
